@@ -68,7 +68,7 @@
 }
 
 #conteudo .cards .card h3 {
-    color: var(--principal-color);
+    color: var(--color-black);
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -120,6 +120,10 @@
         grid-template-columns: 1fr 1fr;
       }
 
+      section#conteudo .cards .card h3 {
+        color: var(--principal-color);
+      }
+
       section#conteudo .cards .card::before {
         display: none;
       }
@@ -131,7 +135,7 @@
         width: 2px;
         top: 0;
         left: -2rem;
-        background: linear-gradient(to bottom, #F2BE38, #f2bd3800);
+        background: linear-gradient(to bottom, #F2BE38 90%, #f2bd3800);
       }
   }
   
