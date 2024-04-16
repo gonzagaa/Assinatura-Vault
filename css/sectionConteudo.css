@@ -1,0 +1,154 @@
+
+#conteudo  {
+    background: var(--gradient-white);
+}
+
+#conteudo img.line-indicator {
+    margin-bottom: 2rem;
+}
+
+#conteudo header {
+    margin-bottom: 6rem;
+    text-align: left;
+}
+
+#conteudo header img {
+     width: 5rem;
+    margin-bottom: 1rem;      
+}
+
+#conteudo header h2 {
+    color: var(--color-black);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#conteudo header h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#conteudo header p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+#conteudo .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#conteudo .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+
+    position: relative;
+}
+
+#conteudo .cards .card::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: -2rem;
+    left: 0;
+    background: linear-gradient(to right, #F2BE38, #f2bd3800);
+}
+
+#conteudo .cards .card ion-icon {
+    font-size: 3rem;
+    color: var(--color-black);
+    margin-bottom: 1rem;
+}
+
+#conteudo .cards .card h3 {
+    color: var(--principal-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#conteudo .cards .card p {
+    color: var(--color-black);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+#conteudo .cards .card p span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+  }
+  
+  @media (min-width: 1080px) {
+      .wrapper {
+        width: min(112rem, 100%);
+      }
+
+      section#conteudo header h2 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      section#conteudo header p {
+        font-size: 1.8rem;
+        margin-bottom: 6rem;
+      }
+
+      section#conteudo .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+        align-items: start;
+      }
+
+      section#conteudo .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      section#conteudo .cards .card::before {
+        display: none;
+      }
+
+      section#conteudo .cards .card::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        top: 0;
+        left: -2rem;
+        background: linear-gradient(to bottom, #F2BE38, #f2bd3800);
+      }
+  }
+  
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+  }
+  
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+  }
+  
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }

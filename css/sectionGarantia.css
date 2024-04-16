@@ -1,0 +1,117 @@
+
+#garantia {
+    background: var(--gradient-white);
+}
+
+#garantia .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#garantia .image img {
+    width: 20rem;
+}
+
+#garantia .text span.vault {
+    background: var(--gradient);
+    color: var(--color-black);
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    width: max-content;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+#garantia .text h2 {
+    color: var(--color-black);
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#garantia .text p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+  }
+  
+  @media (min-width: 1080px) {
+      .wrapper {
+        width: min(112rem, 100%);
+      }
+
+      section#garantia .content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+
+      section#garantia {
+        background: var(--gradient-black);
+      }
+
+      section#garantia .wrapper {
+        border-radius: 2rem;
+        padding: 4rem;
+
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(19, 19, 19, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.125);
+      }
+
+      section#garantia .image {
+        display: flex;
+        justify-content: start;
+      }
+
+      section#garantia .image img {
+        width: 70%;
+      }
+
+      section#garantia .text span.vault {
+        font-size: 2rem;
+        display: block;
+      }
+
+      section#garantia .text h2 {
+        font-size: 4rem;
+        text-align: left;
+        color: var(--color-text);
+      }
+
+      section#garantia .text p {
+        font-size: 1.8rem;
+        text-align: left;
+        color: var(--color-text);
+      }
+
+      
+  }
+  
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+  }
+  
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+  }
+  
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }

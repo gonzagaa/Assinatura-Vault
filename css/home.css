@@ -1,0 +1,126 @@
+
+
+#home {
+  background: var(--gradient-black);
+  height: 100vh;
+  overflow: hidden;
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home .content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+
+  position: relative;
+  z-index: 7;
+}
+
+#home .content .text {
+  text-align: left;
+}
+
+#home .content .text img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+#home .content .text h1 {
+  font-size: 2.5rem;
+  color: var(--color-text);
+
+  margin-bottom: 1rem;
+}
+
+#home .content .text h1 span {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#home .content .text h2 {
+  font-size: 1.8rem;
+  color: var(--color-text);
+  font-weight: 400;
+  opacity: .7;
+  
+  margin-bottom: 2rem;
+}
+
+#home .content .text a {
+  text-decoration: none;
+}
+
+#home .content .text a button {
+  background: var(--gradient);
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+#home .content .video video {
+  width: 100%;
+  border-radius: 1rem;
+  border: 2px solid var(--principal-color);
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+      width: min(76rem, 100%);
+  } 
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    header#home .content .text {
+      text-align: center;
+    }
+
+    header#home .content .text h1 {
+      font-size: 4.5rem;
+    }
+
+    header#home .content .text h2 {
+      font-size: 2.8rem;
+    }
+
+    header#home .content .text a button {
+      font-size: 2rem;
+      padding: 1rem 4rem;
+    }
+
+    header#home .content .video video {
+      width: 60%;
+    }
+
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    width: min(140rem, 100%);
+  }
+}
+
+@media (min-width: 1700px) {
+  .wrapper {
+    width: min(150rem, 100%);
+  }
+}
+
+@media (min-width: 2000px) {
+  .wrapper {
+    width: min(160rem, 100%);
+  }
+}

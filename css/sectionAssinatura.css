@@ -1,0 +1,214 @@
+#assinatura {
+    background: var(--gradient-black);
+}
+
+#assinatura header {
+    margin-bottom: 6rem;
+    text-align: left;
+}
+
+#assinatura header span.vault {
+    background: var(--gradient);
+    color: var(--color-black);
+    font-weight: 700;
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    width: max-content;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+#assinatura header h2 {
+    color: var(--color-text);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+#assinatura header h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#assinatura header p ion-icon {
+    background: var(--gradient);
+    border-radius: 50%;
+    color: var(--color-black);
+    padding: .5rem;
+    font-size: 2rem;
+}
+
+#assinatura header p {
+    font-size: 1.6rem;
+    color: var(--color-text);
+    font-weight: 500;
+    margin-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#assinatura .plano {
+    background: var(--gradient);
+    padding: 2rem;
+    border-radius: 1rem;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 10;
+}
+
+#assinatura .plano img.logo {
+    position: absolute;
+    width: 3rem;
+    top: -1rem;
+    left: -1rem;
+    background: var(--gradient-black);
+    padding: .5rem;
+    border-radius: 50%;
+    border: 1px solid var(--principal-color);
+}
+
+#assinatura .plano h3 {
+    font-size: 1.6rem;
+    color: var(--color-black);
+    font-weight: 700;
+}
+
+#assinatura .plano h3 span {
+    font-weight: 500;
+}
+
+#assinatura .plano span.price {
+    font-size: 5rem;
+    font-weight: 800;
+
+    display: block;
+    margin-block: 2rem;
+}
+
+#assinatura .plano p ion-icon {
+    background: var(--gradient-black);
+    border-radius: 50%;
+    color: var(--principal-color);
+    padding: .5rem;
+    font-size: 2rem;
+}
+
+#assinatura .plano p {
+    text-align: left;
+    font-size: 1.4rem;
+    color: var(--color-black);
+    font-weight: 500;
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#assinatura .plano a {
+    text-decoration: none;
+    width: 100%;
+}
+
+#assinatura .plano a button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    background: var(--gradient-black);
+    color: var(--color-text);
+    border: none;
+    border-radius: 1rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#assinatura .plano a button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+  }
+  
+  @media (min-width: 1080px) {
+      .wrapper {
+        width: min(112rem, 100%);
+      }
+
+      section#assinatura header h2 {
+        font-size: 4rem;
+        margin-bottom: 6rem;
+      }
+
+      section#assinatura header span.vault {
+        font-size: 2rem;
+      }
+
+      section#assinatura header p {
+        font-size: 1.8rem;
+      }
+
+      section#assinatura .content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+
+      section#assinatura .plano {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+
+        padding: 3rem;
+
+        max-height: max-content;
+      }
+
+      section#assinatura .plano img.logo {
+        width: 4rem;
+        padding: .7rem;
+      }
+
+      section#assinatura .plano h3 {
+        font-size: 2.5rem;
+      }
+
+      section#assinatura .plano span.price {
+        font-size: 7rem;
+      }
+
+      section#assinatura .plano p ion-icon {
+        font-size: 2rem;
+      }
+
+      section#assinatura .plano a button {
+        font-size: 2.5rem;
+      }
+  }
+  
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+  }
+  
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+  }
+  
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }

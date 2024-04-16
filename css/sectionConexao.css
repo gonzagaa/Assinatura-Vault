@@ -1,0 +1,99 @@
+#conexao {
+    background: var(--gradient-black);
+}
+
+#conexao img.line-indicator {
+    margin-bottom: 2rem;
+}
+
+#conexao header h2 {
+    color: var(--color-text);
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+#conexao header h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#conexao .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#conexao .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    padding: 2rem;
+
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(19, 19, 19, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#conexao .cards .card img {
+    width: 4rem;
+    margin-bottom: 2rem;
+}
+
+#conexao .cards .card p {
+    color: var(--color-text);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+#conexao .cards .card p span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+  }
+  
+  @media (min-width: 1080px) {
+      .wrapper {
+        width: min(112rem, 100%);
+      }
+
+      section#conexao header h2 {
+        font-size: 4rem;
+        margin-bottom: 6rem;
+      }
+
+      section#conexao .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+  }
+  
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+  }
+  
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+  }
+  
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }

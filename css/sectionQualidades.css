@@ -1,0 +1,103 @@
+#qualidades {
+    background: var(--gradient-black);
+}
+
+#qualidades img.line-indicator {
+    margin-bottom: 2rem;
+}
+
+#qualidades header h2 {
+    color: var(--color-text);
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+#qualidades header h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#qualidades .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#qualidades .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    padding: 2rem;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(19, 19, 19, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#qualidades .cards .card span {
+    color: var(--principal-color);
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#qualidades .cards .card h3 {
+    color: var(--color-text);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#qualidades .cards .card p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+  }
+  
+  @media (min-width: 1080px) {
+      .wrapper {
+        width: min(112rem, 100%);
+      }
+
+      section#qualidades img.line-indicator {
+        margin-bottom: 4rem;
+      }
+
+      section#qualidades header h2 {
+        font-size: 4rem;
+        margin-bottom: 6rem;
+      }
+
+      section#qualidades .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+  }
+  
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+  }
+  
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+  }
+  
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
