@@ -49,12 +49,11 @@ html {
     height: 100%;
     font-family: var(--Phonk);
     text-align: center;
-    background: var(--gradient-black);
+    background: var(--color-black);
   }
 
   body {
-    cursor: none;
-    background: var(--gradient-black);
+    background: var(--color-black);
   }
 
   .cursor-outline {
