@@ -130,6 +130,7 @@
 #assinatura .plano a button:hover {
     cursor: pointer;
     filter: brightness(1.2);
+    box-shadow: 2px 2px 10px #0000008c;
 }
 
 @media (min-width: 768px) {

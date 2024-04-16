@@ -19,11 +19,13 @@
   gap: 5rem;
 
   position: relative;
-  z-index: 7;
+  z-index: 10;
 }
 
 #home .content .text {
   text-align: left;
+  position: relative;
+  z-index: 10;
 }
 
 #home .content .text img {
@@ -65,6 +67,13 @@
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--color-black);
+
+  transition: all 200ms ease-in-out;
+}
+
+#home .content .text a button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
 }
 
 #home .content .video video {
