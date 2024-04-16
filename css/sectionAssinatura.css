@@ -1,5 +1,7 @@
 #assinatura {
     background: var(--gradient-black);
+
+  overflow: hidden;
 }
 
 #assinatura header {

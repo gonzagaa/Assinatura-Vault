@@ -1,6 +1,8 @@
 
 #conteudo  {
     background: var(--gradient-white);
+  overflow: hidden;
+
 }
 
 #conteudo img.line-indicator {

@@ -1,6 +1,7 @@
 
 #garantia {
     background: var(--gradient-white);
+  overflow: hidden;
 }
 
 #garantia .content {

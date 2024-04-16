@@ -54,7 +54,7 @@ html {
 
   body {
     cursor: none;
-    background-color: var(--black-900);
+    background: var(--gradient-black);
   }
 
   .cursor-outline {

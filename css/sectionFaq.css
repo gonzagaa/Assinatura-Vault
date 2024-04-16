@@ -1,5 +1,6 @@
 #faq {
     background: var(--gradient-black);
+  overflow: hidden;
 }
 
 #faq header {
