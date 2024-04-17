@@ -1,0 +1,130 @@
+#depoimentos {
+    background: var(--gradient-black);
+  overflow: hidden;
+}
+
+#depoimentos header {
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+#depoimentos header h2 {
+    color: var(--color-text);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#depoimentos header h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#depoimentos img {
+    margin-block: 2rem;
+  }
+  
+  #depoimentos h2 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+  
+  #depoimentos .videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    position: relative;
+    z-index: 10;
+  }
+  
+  #depoimentos .video-box {
+    position: relative;
+  }
+  
+  #depoimentos .video-box img {
+    position: absolute;
+    width: 20%;
+    top: -3rem;
+    left: -1rem;
+    z-index: 10;
+    object-fit: cover;
+  
+    background-color: rgba(0, 0, 0, 0.712);
+      backdrop-filter: blur(2px) saturate(180%);
+      -webkit-backdrop-filter: blur(2px) saturate(180%);
+    
+    padding: .4rem;
+    border-radius: 50%;
+    border: 1px solid var(--principal-color);
+  }
+  
+  #depoimentos video {
+    width: 100%;
+    border-radius: 1rem;
+    border: 2px solid var(--principal-color);
+  
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+  }
+  
+  @media (min-width: 1080px) {
+      .wrapper {
+        width: min(112rem, 100%);
+      }
+
+      section#depoimentos header h2 {
+        font-size: 4rem;
+        margin-bottom: 6rem;
+      }
+
+      section#depoimentos .videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin-top: 5rem;
+    
+        position: relative;
+      }
+    
+      section#depoimentos .video-box img {
+        position: absolute;
+        width: 10%;
+        top: -4rem;
+        left: 7rem;
+        z-index: 10;
+      
+        padding: .7rem;
+        border-radius: 50%;
+        border: 1px solid var(--principal-color);
+      }
+    
+      section#depoimentos .videos video {
+        width: 60%;
+      } 
+
+  }
+  
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+  }
+  
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+  }
+  
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
+  
