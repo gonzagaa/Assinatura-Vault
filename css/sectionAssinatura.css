@@ -92,6 +92,22 @@
     margin-block: 2rem;
 }
 
+#assinatura .plano span.parcelado {
+  font-size: 1.6rem;
+  color: var(--color-black);
+  font-weight: 600;
+  display: block;
+  margin-top: -2rem;
+}
+
+#assinatura .plano span.avista {
+  font-size: 2rem;
+  color: var(--color-black);
+  font-weight: 700;
+  display: block;
+  margin-block: 2rem;
+}
+
 #assinatura .plano p ion-icon {
     background: var(--gradient-black);
     border-radius: 50%;
@@ -187,6 +203,14 @@
 
       section#assinatura .plano span.price {
         font-size: 7rem;
+      }
+
+      #assinatura .plano span.parcelado {
+        font-size: 2rem;
+      }
+
+      #assinatura .plano span.avista {
+        font-size: 2.5rem;
       }
 
       section#assinatura .plano p ion-icon {
